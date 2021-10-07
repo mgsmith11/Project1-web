@@ -1,0 +1,116 @@
+/* Master styles */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+
+.master{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navigation bar styles*/
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left{
+    display: flex;
+
+}
+
+.topBar > .left > div{
+    margin-right: 20px;
+    font-size: 0.8;
+
+}
+
+.link{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.link a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    border-bottom: 1px solid black;
+}
+
+.link a:hover {
+    color: black;
+}
+
+/*Protfolio Styles*/
+
+.port-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.port{
+    position: relative;
+}
+
+.image{
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+/*  Puts text inside of the image, instead of the default below*/ 
+.img-txt{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.img-txt .img-description{
+   transition: 1s;
+   font-weight: 600;
+   color: transparent;
+}
+
+.img-txt:hover .img-description{
+    font-weight: 600;
+    color: aliceblue;
+}
+
+
+/*ABOUT ME*/
+.about-me-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-pic img{
+    width: 100%;
+   
+}
+
+.about-me-written{
+    padding: 40px;
+
+}
+
+.about-me-written h1{
+    color: crimson;
+}
